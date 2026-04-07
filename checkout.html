@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Prompt Engineering Cheat Sheet - Buy Now</title>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <div style="max-width: 400px; margin: 50px auto; padding: 20px; font-family: sans-serif;">
+        <h1>AI Prompt Engineering Cheat Sheet</h1>
+        <p>Master AI communication with battle-tested prompt frameworks</p>
+        <p>Price: €7</p>
+        <button id="buy-button">Buy Now</button>
+        <div id="message"></div>
+    </div>
+    <script>
+        // This is a test publishable key - safe to expose
+        // In production, you would use a live key from environment variables
+        const stripe = Stripe('pk_test_51Hv2gaLWu0oYU5G1K0dO0dO0dO0dO0dO0dO0dO0dO0dO0dO0dO0dO0dO0dO0dO0dO0');
+        
+        document.getElementById('buy-button').addEventListener('click', async () => {
+            const response = await fetch('/create-checkout-session', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    price: 700, // €7 in cents
+                    product_name: 'AI Prompt Engineering Cheat Sheet'
+                })
+            });
+            
+            const session = await response.json();
+            
+            const { error } = await stripe.redirectToCheckout({ sessionId: session.id });
+            if (error) {
+                document.getElementById('message').textContent = `Error: ${error.message}`;
+            }
+        });
+    </script>
+</body>
+</html>
