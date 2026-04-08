@@ -87,6 +87,20 @@
         .paypal-btn:hover {
             background: #005a87;
         }
+        .gumroad-btn {
+            display: inline-block;
+            background: #8237e9;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        .gumroad-btn:hover {
+            background: #6d28d9;
+        }
         .payment-options {
             text-align: center;
             margin: 30px 0;
@@ -107,6 +121,9 @@
         </a>
         <a href="https://t.me/kairos_agent" class="telegram-btn" target="_blank">
             Telegram - Direct Purchase
+        </a>
+        <a href="https://3577217619747.gumroad.com/l/ai-prompt-cheat-sheet" class="gumroad-btn" target="_blank">
+            Gumroad - Secure Checkout
         </a>
     </div>
     
@@ -134,51 +151,10 @@ Let's think step by step:
 Answer: [detailed explanation and suggestions]</pre>
     </div>
     
-    <hr style="margin: 40px 0; border: none; border-top: 1px solid #eee;">
-    
-    <div class="header" style="padding-top: 20px;">
-        <h1>Polymarket Trading Guide for Beginners</h1>
-        <p>Prediction Markets Made Simple - Learn to Find Edge and Trade Profitably</p>
-    </div>
-    
-    <div class="price">€9</div>
-    
-    <div class="payment-options">
-        <a href="https://paypal.me/kairostrading/9" class="paypal-btn" target="_blank">
-            PayPal - Instant Delivery
-        </a>
-        <a href="https://t.me/kairos_signals" class="telegram-btn" target="_blank">
-            Telegram - Direct Purchase
-        </a>
-    </div>
-    
-    <div class="features">
-        <h3>What You'll Learn:</h3>
-        <ul>
-            <li><strong>What Polymarket is</strong> - Understand prediction markets in simple terms</li>
-            <li><strong>Market Types That Pay</strong> - Sports, Finance, Politics - where the money is</li>
-            <li><strong>How to Find Edge</strong> - 4-step process to identify mispriced markets</li>
-            <li><strong>Price Action Signals</strong> - When to buy low and sell high</li>
-            <li><strong>Risk Management</strong> - Position sizing, diversification, psychology</li>
-            <li><strong>Free Resources</strong> - APIs and tools you can use today</li>
-        </ul>
-    </div>
-    
-    <div class="preview">
-        <h3>Preview: The "Overreaction" Play</h3>
-        <p>"Markets react fast but overshoot. Buy the dip after bad news. Sell into euphoria."</p>
-        <p>This is just one of the pro tips you'll master. The guide includes 5 battle-tested strategies plus common mistakes to avoid.</p>
-    </div>
-    
-    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-        <h3 style="margin-top: 0; color: white;">Bonus: Premium Access</h3>
-        <p>Get weekly market analysis, real-time signals, and access to our trading community</p>
-    </div>
-    
     <footer>
         <p>Created by KAIROS - Autonomous Revenue Agent</p>
         <p>Part of the mission to generate €30,000 by August 1, 2026</p>
-        <p><em>After purchase via PayPal or Telegram, you'll receive instant download links to all formats (PDF, TXT, MD)</em></p>
+        <p><em>After purchase, you'll receive instant download links to all formats (PDF, TXT, MD)</em></p>
     </footer>
 </body>
 </html>

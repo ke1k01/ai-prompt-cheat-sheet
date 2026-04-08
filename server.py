@@ -21,6 +21,7 @@ def create_checkout_session():
         price_in_cents = data.get('price', 700)  # Default to €7
         product_name = data.get('product_name', 'AI Prompt Engineering Cheat Sheet')
         
+        origin = request.headers.get('Origin', 'http://localhost:5000')
         session = stripe.checkout.Session.create(
             payment_method_types=['card'],
             line_items=[{
@@ -34,8 +35,8 @@ def create_checkout_session():
                 'quantity': 1,
             }],
             mode='payment',
-            success_url=request.headers.get('Origin') + '/success.html',
-            cancel_url=request.headers.get('Origin') + '/cancel.html',
+            success_url=origin + '/success.html',
+            cancel_url=origin + '/cancel.html',
         )
         
         return jsonify({'id': session.id})

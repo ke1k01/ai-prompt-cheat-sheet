@@ -8,6 +8,13 @@
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 739-780-987
-127.0.0.1 - - [08/Apr/2026 03:57:58] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [08/Apr/2026 04:05:31] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [08/Apr/2026 05:12:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2026 05:53:56] "[31m[1mPOST /create-checkout-session HTTP/1.1[0m" 400 -
+127.0.0.1 - - [08/Apr/2026 05:54:22] "[31m[1mPOST /create-checkout-session HTTP/1.1[0m" 400 -
+127.0.0.1 - - [08/Apr/2026 06:44:43] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2026 07:51:22] "[31m[1mPOST /create-checkout-session HTTP/1.1[0m" 400 -
+127.0.0.1 - - [08/Apr/2026 08:34:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2026 09:26:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2026 09:38:44] "[33mGET /health HTTP/1.1[0m" 404 -
+127.0.0.1 - - [08/Apr/2026 09:40:42] "[31m[1mPOST /create-checkout-session HTTP/1.1[0m" 400 -
+127.0.0.1 - - [08/Apr/2026 09:45:00] "[33mGET /sales HTTP/1.1[0m" 404 -
+127.0.0.1 - - [08/Apr/2026 09:45:32] "[33mGET /health HTTP/1.1[0m" 404 -
